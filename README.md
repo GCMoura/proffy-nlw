@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Application create in Next Level Week from Rocketseat
 
 ### No backend:
@@ -14,3 +15,7 @@
   - As migrations controlam a versão do banco de dados
 
 
+=======
+# Proffy
+Application created in Next Level Week from Rocketseat
+>>>>>>> e489ea4b7a01529991cae096a2ed01cb53f60549
