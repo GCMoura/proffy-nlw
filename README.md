@@ -1,2 +1,2 @@
-# proffy-nlw
-Application create in Next Level Week from Rocketseat
+# Proffy
+Application created in Next Level Week from Rocketseat
