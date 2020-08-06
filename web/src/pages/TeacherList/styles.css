@@ -42,9 +42,10 @@
   #search-teachers{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
+    column-gap: 10px;
     position: absolute;
     bottom: 350px;
+    max-width: 740px;
   }
   #search-teachers .input-block + .input-block,
   #search-teachers .select-block + .select-block{

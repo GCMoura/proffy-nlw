@@ -18,6 +18,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
           <Link to="/">
             <img src={ backIcon } alt="Voltar"/>
           </Link>
+          
           <img src={ logoImg } alt="Logo"/>
 
           <div className="header-content">

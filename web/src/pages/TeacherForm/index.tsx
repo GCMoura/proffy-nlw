@@ -45,7 +45,7 @@ function TeacherForm(){
       whatsapp, 
       bio, 
       subject, 
-      cost: Number(cost),
+      cost: String(cost),
       schedule: scheduleItems
     }). then(() => {
       alert('Cadastro realizado com sucesso!')
@@ -102,6 +102,12 @@ function TeacherForm(){
               value={bio} 
               onChange={(event) => { setBio(event.target.value) }} 
             />
+            <Input 
+            name="cost" 
+            label="Perfil no Linkedin"
+            value={cost}
+            onChange={(event) => { setCost(event.target.value) }} 
+          />
             
           </fieldset>
 
@@ -110,28 +116,22 @@ function TeacherForm(){
           
           <Select 
             name="subject" 
-            label="Matéria"
+            label="Tecnologia"
             value={subject}
             onChange={(event) => { setSubject(event.target.value) }} 
             options={[
-              { value: "Artes", label: 'Artes'},
-              { value: "Biologia", label: 'Biologia'},
-              { value: "Química", label: 'Química'},
-              { value: "Física", label: 'Física'},
-              { value: "Português", label: 'Português'},
-              { value: "Matemática", label: 'Matemática'},
-              { value: "Filosofia", label: 'Filosofia'},
-              { value: "Sociologia", label: 'Sociologia'},
-              { value: "Geografia", label: 'Geografia'},
-              { value: "História", label: 'História'},
-              { value: "Educação Física", label: 'Educação Física'},
-            ]}  
-          />
-          <Input 
-            name="cost" 
-            label="Custo da sua hora por aula"
-            value={cost}
-            onChange={(event) => { setCost(event.target.value) }} 
+              { value: "HTML5", label: 'HTML5'},
+              { value: "CSS3", label: 'CSS3'},
+              { value: "Javascript", label: 'Javascript'},
+              { value: "TypeScript", label: 'TypeScript'},
+              { value: "PHP", label: 'PHP'},
+              { value: "Java", label: 'Java'},
+              { value: "C", label: 'C'},
+              { value: "C++", label: 'C++'},
+              { value: "C#", label: 'C#'},
+              { value: "Python", label: 'Python'},
+              { value: "NodeJS", label: 'NodeJS'},
+            ]}
           />
           
         </fieldset>
