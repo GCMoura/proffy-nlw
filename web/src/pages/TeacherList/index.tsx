@@ -33,12 +33,12 @@ function TeacherList() {
 
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader title="Estes são os proffys disponíveis">
+      <PageHeader title="Estas pessoas estão dispostas a te ajudar">
         <form id="search-teachers" onSubmit={searchTeachers}>
           
           <Select 
             name="subject" 
-            label="Matéria"
+            label="Tecnologia"
             value={subject}
             onChange={event => { setSubject(event.target.value) }}
             options={[

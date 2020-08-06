@@ -7,7 +7,7 @@
   margin-top: 3.2rem;
 }
 #search-teachers label {
-  color: var(--color-text-in-primary);
+  color: var(--color-title-in-primary);
 }
 #search-teachers button {
   width: 100%;
@@ -45,7 +45,9 @@
     column-gap: 10px;
     position: absolute;
     bottom: 350px;
-    max-width: 740px;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-left: -50px;
   }
   #search-teachers .input-block + .input-block,
   #search-teachers .select-block + .select-block{
@@ -53,7 +55,7 @@
   }
   #page-teacher-list main {
     padding: 3.2rem 0;
-    max-width: 740px;
+    max-width: 840px;
     margin: 0 auto;
   }
   

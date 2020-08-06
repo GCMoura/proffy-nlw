@@ -29,8 +29,9 @@ function Landing() {
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
-          <img src={ logoImg } alt="Logo"/>
-          <h2>Sua plataforma de estudos online</h2>
+          {/* <img src={ logoImg } alt="Logo"/> */}
+          <h1>Mentor do Bem</h1>
+          <h4>Sua plataforma de estudos online</h4>
         </div>
 
         <img src={ landingImg } alt="Hero Img" className="hero-image"/>
@@ -38,12 +39,12 @@ function Landing() {
         <div className="buttons-container">
           <Link to="/study" className="study">
             <img src={ studyIcon } alt="Estudar"/>
-            Estudar
+            Aprender
           </Link>
 
           <Link to="/give-classes" className="give-classes">
             <img src={ giveClassIcon } alt="Aula"/>
-            Dar Aula
+            Ajudar
           </Link>
         </div>
 

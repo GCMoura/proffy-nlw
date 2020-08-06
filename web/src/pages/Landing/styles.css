@@ -20,12 +20,16 @@
   text-align: center;
   margin-bottom: 3.2rem;
 }
-
-.logo-container h2{
+.logo-container h1{
+  font: Shojumaru;
+  font-size: 4.0rem;
+  color: var(--color-title-in-primary);
+}
+.logo-container h4{
   font-weight: 500;
-  font-size: 2.4rem;
   line-height: 4.6rem;
   margin-top: 0.8rem;
+  color: var(--color-title-in-primary);
 }
 
 .buttons-container{
@@ -64,13 +68,13 @@
   background: var(--color-primary-lighter);
 }
 .buttons-container a.give-classes{
-  background: var(--color-secundary);
+  background: var(--color-secundary-dark);
 }
 .buttons-container a.study:hover{
   background: var(--color-primary-light);
 }
 .buttons-container a.give-classes:hover{
-  background: var(--color-secundary-dark);
+  background: var(--color-secundary);
 }
 
 .total-connections{
@@ -78,6 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-title-in-primary); 
 }
 
 .total-connections img{

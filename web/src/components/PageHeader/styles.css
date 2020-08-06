@@ -13,6 +13,7 @@
 .page-header .top-bar-container a {
   height: 3.2rem;
   transition: opacity 0.2s;
+  text-decoration: none;
 }
 
 .page-header .top-bar-container a:hover {
@@ -40,7 +41,7 @@
   max-width: 30rem;
   font-size: 1.6rem;
   line-height: 2.6rem;
-  color: var(--color-text-in-primary);
+  color: var(--color-title-in-primary);
   margin-top: 2.4rem;
 }
 
