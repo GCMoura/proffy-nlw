@@ -1,4 +1,4 @@
-import React, {  useState, useEffect} from 'react'
+import React, {  useState, useEffect } from 'react'
 
 import { Link } from 'react-router-dom'
 
@@ -29,9 +29,8 @@ function Landing() {
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
-          {/* <img src={ logoImg } alt="Logo"/> */}
           <h1>Mentor do Bem</h1>
-          <h4>Sua plataforma de estudos online</h4>
+          <h4>Sua plataforma de aprendizado online</h4>
         </div>
 
         <img src={ landingImg } alt="Hero Img" className="hero-image"/>
