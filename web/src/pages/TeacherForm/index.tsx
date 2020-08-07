@@ -47,7 +47,7 @@ function TeacherForm(){
       subject, 
       cost: String(cost),
       schedule: scheduleItems
-    }). then(() => {
+    }).then(() => {
       alert('Cadastro realizado com sucesso!')
       history.push('/')
     }).catch(() => {

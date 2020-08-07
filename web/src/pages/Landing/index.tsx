@@ -29,8 +29,8 @@ function Landing() {
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
-          <h1>Mentor do Bem</h1>
-          <h4>Sua plataforma de aprendizado online</h4>
+          <p>Mentor do Bem</p>
+          <h2>Sua plataforma de aprendizado online</h2>
         </div>
 
         <img src={ landingImg } alt="Hero Img" className="hero-image"/>
@@ -44,6 +44,12 @@ function Landing() {
           <Link to="/give-classes" className="give-classes">
             <img src={ giveClassIcon } alt="Aula"/>
             Ajudar
+          </Link>
+        </div>
+        <div className="button-login">
+          <Link to="/login" className="login">
+            <img src={ giveClassIcon } alt="Login"/>
+            Login
           </Link>
         </div>
 

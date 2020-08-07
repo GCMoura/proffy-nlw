@@ -1,6 +1,7 @@
 import express from 'express'
 import ClassesController from './controllers/ClassesController'
 import ConnectionsController from './controllers/ConnectionsController'
+import UserController from './controllers/UserController'
 
 const routes  = express.Router()
 
@@ -8,8 +9,18 @@ const routes  = express.Router()
 //Route Params => (req.params) identificar qual recurso eu quero atualizar ou deletar -> /users/:id 
 // Query Params => (req.query) Para fazer paginação de usuários, filtors, ordenação, por exemplo
 
+
 const classesControllers = new ClassesController()
 const connectionsController = new ConnectionsController()
+
+const userController = new UserController()
+
+// routes.get('/', (req, res) => {
+//   return res.send('Assim Funciona também')
+// })
+
+routes.get('/login', userController.index)
+routes.post('/login', userController.create)
 
 routes.get('/classes', classesControllers.index)
 routes.post('/classes', classesControllers.create)

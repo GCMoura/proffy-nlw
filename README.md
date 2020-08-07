@@ -13,6 +13,10 @@
 - npm install @types/cors -D
 - npm install axios
 
+#### Para a criação de Login
+- npm install passport-http
+- npm install @types/passport-http
+
 #### Uso do Insomnia
 - Insomnia para testar as conexões com o banco de dados e verificar o servidro em funcionamento
 
