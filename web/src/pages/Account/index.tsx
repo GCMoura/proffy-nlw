@@ -10,8 +10,6 @@ import './styles.css'
 
 function Login(){
 
-  var validate = false
-
   const history = useHistory()
 
   const [name, setName] = useState('')
@@ -20,30 +18,21 @@ function Login(){
   async function handleCreateUser(event: FormEvent){
     event.preventDefault()
     
-    const response = await api.get('login', {
-      params: {
-        name, 
-        password 
-      }
+    await api.post('login', {
+      name, 
+      password 
+    }).then(() => {
+      alert('Cadastro realizado com sucesso!')
+      history.push('/login')
+    }).catch(() => { 
+      alert('Houve um erro no servidor. Por favor refaça seu cadastro.')
     })
-
-    if(response.data.length !== 0){
-      alert('Login realizado com sucesso!')
-      validate = true
-      history.push('/')
-    } else {
-      alert('Usuário ou senha incorretos. Por favor refaça o seu login.')
-    }
-  }
-
-  function validation() {
-    return validate
   }
 
   return (
     <div id="page-user-form" className="container">
       <PageHeader 
-        title="Faça seu login"
+        title="Crie sua conta"
       />
 
       <main>
@@ -63,12 +52,7 @@ function Login(){
               value={password} 
               type="password"
               onChange={(event) => { setPassword(event.target.value) }}
-            />     
-            <p>
-              Ainda não tem uma conta? <br/>
-              Cadastre-se clicando 
-              <Link to="/account"> Aqui</Link> 
-            </p>       
+            />            
           </fieldset>
 
           <footer>
@@ -78,7 +62,7 @@ function Login(){
               Preencha todos os dados
             </p>
             <button type="submit">
-              Fazer login
+              Criar sua conta
             </button>
           </footer>
         </form>

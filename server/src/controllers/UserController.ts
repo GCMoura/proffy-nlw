@@ -20,8 +20,6 @@ export default class UserController {
       .where('login.name', '=', name)
       .where('login.password', '=', password)
 
-      console.log(users)
-
     return res.json(users)
   }
 
@@ -29,7 +27,7 @@ export default class UserController {
 
     const { name, password } = req.body
 
-    console.log(name, password)
+    console.log('create - ', name, password)
 
     const trx = await db.transaction()
 

@@ -15,11 +15,8 @@ const connectionsController = new ConnectionsController()
 
 const userController = new UserController()
 
-// routes.get('/', (req, res) => {
-//   return res.send('Assim Funciona também')
-// })
-
 routes.get('/login', userController.index)
+
 routes.post('/login', userController.create)
 
 routes.get('/classes', classesControllers.index)

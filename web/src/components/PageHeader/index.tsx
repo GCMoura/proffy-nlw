@@ -19,7 +19,8 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
             <img src={ backIcon } alt="Voltar"/> 
           </Link>
           
-          <img src={ logoImg } alt="Logo"/>
+          {/* <img src={ logoImg } alt="Logo"/> */}
+          <span>Mentor do Bem</span>
 
           <div className="header-content">
             <strong>{ props.title }</strong>
