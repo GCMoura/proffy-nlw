@@ -15,6 +15,7 @@ function Login(){
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
 
+
   async function handleCreateUser(event: FormEvent){
     event.preventDefault()
     
@@ -26,7 +27,7 @@ function Login(){
     })
 
     if(response.data.length !== 0){
-      alert('Login realizado com sucesso!')
+      alert('Login efetuado com sucesso')      
       history.push(`/user/${name}`)
     } else {
       alert('Usuário ou senha incorretos. Por favor refaça o seu login.')
@@ -37,6 +38,7 @@ function Login(){
     <div id="page-user-form" className="container">
       <PageHeader 
         title="Faça seu login"
+        path="/landing"
       />
 
       <main>
@@ -52,15 +54,15 @@ function Login(){
             />
             <Input 
               name="password" 
-              label="Password"
+              label="Senha"
               value={password} 
               type="password"
               onChange={(event) => { setPassword(event.target.value) }}
             />     
             <p>
-              Ainda não tem uma conta? <br/>
-              Cadastre-se clicando 
-              <Link to="/account"> Aqui</Link> 
+              Ainda não possui uma conta?
+              Cadastre-se gratuitamente clicando 
+              <Link to="/account"> aqui</Link> 
             </p>       
           </fieldset>
 

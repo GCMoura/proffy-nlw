@@ -3,7 +3,7 @@
   height: 100vh;
 }
 #page-user-form .page-header .header-content{
-  margin-bottom: 4.4rem;
+  margin-bottom: 2.4rem;
 }
 #page-user-form main {
   background: var(--color-box-base);
@@ -11,7 +11,7 @@
   max-width: 74rem;
   border-radius: 0.8rem;
   margin: -3.2rem auto 3.2rem;
-  padding-top: 6.4rem;
+  padding-top: 2.4rem;
   overflow: hidden;
 }
 
@@ -19,9 +19,6 @@
   border: 0;
   padding: 0 2.4rem;
 }
-/* #page-user-form main fieldset + fieldset{
-  margin-top: 6.4rem;
-} */
 #page-user-form main fieldset legend{
   font: 700 2.4rem Archivo;
   color: var(--color-text-title);
@@ -38,26 +35,11 @@
   margin-bottom: -3.2rem;
 }
 #page-user-form main fieldset p a{
-  font: 700 2.2rem Archivo;
+  font: 700 2.5rem Archivo;
   text-decoration: none;
   color: var(--color-primary-lighter);
   cursor: pointer;
 }
-/* #page-user-form main fieldset legend button{
-  background: none;
-  border: 0;
-  color: var(--color-primary);
-  font: 700 1.6rem Archivo;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-#page-user-form main fieldset legend button:hover{
-  color: var(--color-primary-dark);
-} */
-/* #page-user-form main fieldset .input-block + .textarea-block,
-#page-user-form main fieldset .select-block + .input-block {
-  margin-top: 2.4rem;
-} */
 #page-user-form main label{
   color: var(--color-text-complement);
 }
@@ -65,7 +47,7 @@
   padding: 4rem 2rem;
   background : var(--color-box-footer);
   border-top: 1px solid var(--color-line-in-blue);
-  margin-top: 6.4rem;
+  margin-top: 2.4rem;
 }
 #page-user-form main footer p {
   display: flex;
@@ -92,7 +74,7 @@
   justify-content: center;
   text-decoration: none;
   transition: background-color 0.3s;
-  margin-top: 3.2rem;
+  margin-top: 1.8rem;
 }
 #page-user-form main footer button:hover {
   background: var(--color-secundary-dark);

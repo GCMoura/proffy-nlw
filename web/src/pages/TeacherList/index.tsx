@@ -26,16 +26,14 @@ function TeacherList() {
         time,
       }
     })
-
     setTeachers(response.data)
-
   }
 
   return (
     <div id="page-teacher-list" className="container">
       <PageHeader 
         title="Estas pessoas estão dispostas a te ajudar" 
-        path="user"
+        path="/user"
       >
         <form id="search-teachers" onSubmit={searchTeachers}>
           

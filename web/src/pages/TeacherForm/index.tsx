@@ -49,7 +49,7 @@ function TeacherForm(){
       schedule: scheduleItems
     }).then(() => {
       alert('Cadastro realizado com sucesso!')
-      history.push('/')
+      history.push(`/user/${name}`)
     }).catch(() => {
       alert('Erro no cadastro!')
     })
@@ -71,7 +71,7 @@ function TeacherForm(){
       <PageHeader 
         title="Que incrível que você quer ajudar!"
         description="O primeiro passo é preencher esse formulário de inscrição."
-        path="user"
+        path="/user"
       />
 
       <main>
@@ -113,7 +113,7 @@ function TeacherForm(){
           </fieldset>
 
           <fieldset>
-          <legend>Sobre a aula</legend>
+          <legend>Escolha a tecnologia</legend>
           
           <Select 
             name="subject" 

@@ -33,6 +33,7 @@ function Login(){
     <div id="page-user-form" className="container">
       <PageHeader 
         title="Crie sua conta"
+        path="/login"
       />
 
       <main>
@@ -48,7 +49,7 @@ function Login(){
             />
             <Input 
               name="password" 
-              label="Password"
+              label="Senha"
               value={password} 
               type="password"
               onChange={(event) => { setPassword(event.target.value) }}
@@ -62,7 +63,7 @@ function Login(){
               Preencha todos os dados
             </p>
             <button type="submit">
-              Criar sua conta
+              Criar conta
             </button>
           </footer>
         </form>

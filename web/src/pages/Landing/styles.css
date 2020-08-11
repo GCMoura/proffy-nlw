@@ -31,13 +31,6 @@
   margin-top: 0.8rem;
   color: var(--color-title-in-primary);
 }
-
-.buttons-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3.2rem 0;
-}
 .button-login{
   display: flex;
   align-items: center;
@@ -60,44 +53,11 @@
   transition: background-color 0.3s;
 }
 
-.buttons-container a{
-  width: 30rem;
-  height: 8.4rem;
-  border-radius: 0.8rem;
-  
-  font: 700 2rem Archivo;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-decoration: none;
-  color: var(--color-button-text);
-
-  transition: background-color 0.3s;
-}
-
-.buttons-container a:first-child {
-  margin-right: 1.6rem;
-}
-
-.buttons-container a img,
 .button-login a img {
   width: 4rem;
   margin-right: 2.4rem;
 }
 
-.buttons-container a.study{
-  background: var(--color-primary-lighter);
-}
-.buttons-container a.give-classes{
-  background: var(--color-secundary-dark);
-}
-.buttons-container a.study:hover{
-  background: var(--color-primary-light);
-}
-.buttons-container a.give-classes:hover{
-  background: var(--color-secundary);
-}
 .button-login a.login{
   background: var(--color-login);
 }
@@ -147,11 +107,7 @@
     grid-area: hero;
     justify-self: end;
   }
-  .buttons-container{
-    grid-area: buttons;
-    justify-content: flex-start;
-  }
-  .buttons-container a,
+  
   .button-login a {
     font-size: 2.4rem;
   }

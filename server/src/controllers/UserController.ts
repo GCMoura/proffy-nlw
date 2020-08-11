@@ -27,8 +27,6 @@ export default class UserController {
 
     const { name, password } = req.body
 
-    console.log('create - ', name, password)
-
     const trx = await db.transaction()
 
     try {

@@ -3,8 +3,7 @@ import React, {  useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import landingImg from '../../assets/images/landing.svg'
-import studyIcon from '../../assets/images/icons/study.svg'
-import giveClassIcon from '../../assets/images/icons/give-classes.svg'
+import loginIcon from '../../assets/images/icons/login.svg'
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
 import api from '../../services/api'
 
@@ -34,20 +33,9 @@ function Landing() {
 
         <img src={ landingImg } alt="Hero Img" className="hero-image"/>
 
-        <div className="buttons-container">
-          {/* <Link to="/study" className="study">
-            <img src={ studyIcon } alt="Estudar"/>
-            Aprender
-          </Link>
-
-          <Link to="/give-classes" className="give-classes">
-            <img src={ giveClassIcon } alt="Aula"/>
-            Ajudar
-          </Link> */}
-        </div>
         <div className="button-login">
           <Link to="/login" className="login">
-            <img src={ giveClassIcon } alt="Login"/>
+            <img src={ loginIcon } alt="Login"/>
             Login
           </Link>
         </div>
