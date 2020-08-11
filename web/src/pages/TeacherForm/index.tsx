@@ -71,6 +71,7 @@ function TeacherForm(){
       <PageHeader 
         title="Que incrível que você quer ajudar!"
         description="O primeiro passo é preencher esse formulário de inscrição."
+        path="user"
       />
 
       <main>

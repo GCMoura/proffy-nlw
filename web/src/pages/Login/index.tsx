@@ -10,8 +10,6 @@ import './styles.css'
 
 function Login(){
 
-  var validate = false
-
   const history = useHistory()
 
   const [name, setName] = useState('')
@@ -29,15 +27,10 @@ function Login(){
 
     if(response.data.length !== 0){
       alert('Login realizado com sucesso!')
-      validate = true
-      history.push('/')
+      history.push(`/user/${name}`)
     } else {
       alert('Usuário ou senha incorretos. Por favor refaça o seu login.')
     }
-  }
-
-  function validation() {
-    return validate
   }
 
   return (
@@ -87,4 +80,4 @@ function Login(){
   )
 }
 
-export default Login
+export default Login 

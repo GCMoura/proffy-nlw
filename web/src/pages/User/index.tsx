@@ -23,6 +23,7 @@ function Landing() {
       })
   }, [])
 
+  const key = Math.random().toString(32).substr(2, 9)
 
   return (
     <div id="page-landing">
@@ -35,22 +36,22 @@ function Landing() {
         <img src={ landingImg } alt="Hero Img" className="hero-image"/>
 
         <div className="buttons-container">
-          {/* <Link to="/study" className="study">
+          <Link to={`/study/${key}`} className="study">
             <img src={ studyIcon } alt="Estudar"/>
             Aprender
           </Link>
 
-          <Link to="/give-classes" className="give-classes">
+          <Link to={`/give-classes/${key}`} className="give-classes">
             <img src={ giveClassIcon } alt="Aula"/>
             Ajudar
-          </Link> */}
+          </Link>
         </div>
-        <div className="button-login">
+        {/* <div className="button-login">
           <Link to="/login" className="login">
             <img src={ giveClassIcon } alt="Login"/>
             Login
           </Link>
-        </div>
+        </div> */}
 
         <span className="total-connections">
           Total de { totalConnections } conexões ja realizadas
