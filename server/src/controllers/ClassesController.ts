@@ -27,17 +27,17 @@ export default class ClassesController{
 
     //consulta ao banco de dados
     const classes = await db('classes')
-      .whereExists(function() {
-        this.select('class_schedule.*')
-          .from('class_schedule')
-          .whereRaw('`class_schedule`.`class_id` = `classes`.`id`') //se o id do professor for igual
-          .whereRaw('`class_schedule`.`week_day` = ??', [Number(week_day)]) //retorna os dias da semana onde tem aula
-          .whereRaw('`class_schedule`.`from` <= ??', [timeInMinutes]) //retorna o horário que a aula começa
-          .whereRaw('`class_schedule`.`to` > ??', [timeInMinutes]) //retorna o horário que a aula termina
-      })
-      .where('classes.subject', '=', subject)
-      .join('users', 'classes.user_id', '=', 'users.id')
-      .select(['classes.*', 'users.*'])
+	.whereExists(function() {
+	  this.select('class_schedule.*')
+	    .from('class_schedule')
+	    .whereRaw('class_schedule.class_id = classes.id')
+	    .whereRaw('class_schedule.week_day = ??', [Number(week_day)])
+	    .whereRaw('class_schedule.from <= ??', [timeInMinutes])
+	    .whereRaw('class_schedule.to > ??', [timeInMinutes])
+	})
+	.where('classes.subject', '=', subject)
+	.join('users', 'classes.user_id', '=', 'users.id')
+	.select(['classes.*', 'users.*'])
 
       return res.json(classes)
   }
@@ -66,7 +66,7 @@ export default class ClassesController{
         avatar,
         whatsapp,
         bio,
-      })
+      }).returning('id')
   
       const user_id = insertedUsersIds[0] //id do usuário
   
@@ -75,7 +75,7 @@ export default class ClassesController{
         subject,
         cost,
         user_id,
-      })
+      }).returning('id')
   
       const class_id = insertedClassesIds[0]
   
