@@ -16,16 +16,16 @@ So, Mentor do Bem intend to connect people who want to learn some technology wit
   - [License](#license)
 
 ## Screenshots (desktop layout)
-![Desktop](https://raw.githubusercontent.com/GCMoura/mentor-do-bem-web/tree/master/src/assets/images/screenshots/desktop.png)
+![Desktop](https://raw.githubusercontent.com/GCMoura/mentor-do-bem-web/master/src/assets/images/screenshots/desktop.png)
 
 ## Screenshots (mobile layout)
-![Mobile](https://raw.githubusercontent.com/GCMoura/mentor-do-bem-web/tree/master/src/assets/images/screenshots/mobile.png)
+![Mobile](https://raw.githubusercontent.com/GCMoura/mentor-do-bem-web/master/src/assets/images/screenshots/mobile.png)
 
 
 ## How it works
 First, you access login page. If you don't have an account, creating it on new account page. Then, you going to redirected to main page. You can choose between search for a connection and learn something or register your time disponibility and technology knowledge to teach someone.
 
-Acess: [Mentor do Bem](https://mentor-do-bem-web.vercel.app/)
+Access: [Mentor do Bem](https://mentor-do-bem-web.vercel.app/)
 
 ## Backend
 For know how backend was built, please access the backend repository in
