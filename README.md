@@ -1,33 +1,38 @@
-## Application create in Next Level Week from Rocketseat
+# Mentor do Bem - Frontend
 
-### No backend:
-- npm install typescript
-- npm install ts-node-dev
-- npm install express
-- npm install @types/express -D
-- npm install knex
-- npm install @types/knex -D
-- npm install sqlite3
-- npm install @types/sqlite3
-- npm install cors
-- npm install @types/cors -D
-- npm install axios
+This project aims to promote the exchange of knowledge about technologies. The idea surged after the finished the Next Level Week from Rocketseat and the initiative of Igor Rebola on Linkedin in helping people outside the labor market to find a redeployment, on free, through the Site do Bem. 
+So, Mentor do Bem intend to connect people who want to learn some technology with people who want to teach a little of your knowledge.  The way to teach and to learn is totally free. Perhaps, the distance between you and the knowledge is just one click away.
 
-#### Para a criação de Login
-- npm install passport-http
-- npm install @types/passport-http
+## Table of Contents
+- [Mentor do Bem - Frontend](#mentor-do-bem---frontend)
+  - [Table of Contents](#table-of-contents)
+  - [Screenshots](#screenshots)
+  - [How it works](#how-it-works)
+  - [Backend](#backend)
+  - [Clone](#clone)
+  - [Deploy](#deploy)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-#### Uso do Insomnia
-- Insomnia para testar as conexões com o banco de dados e verificar o servidro em funcionamento
+## Screenshots
+![Screenshot-1](https://raw.githubusercontent.com/GCMoura/Rijksmuseum/master/screenshots/screenshot-1.png)
 
-#### Uso do banco de dados SQLite
-- npm install knex sqlite3
-  - Knex permite que os comandos sql sejam escritos em Javascript
-  - As migrations controlam a versão do banco de dados
+## How it works
+First, you access login page. If you don't have an account, creating it on new account page. Then, you going to redirected to main page. You can choose between search for a connection and learn something or register your time disponibility and technology knowledge to teach someone.
 
-#### Uso do axios
-- Facilita o consumo de API's externas, tal qual o Insomnia
+## Backend
+For know how backend was built, please access the backend repository in
 
-#### React
-- useState -> controla o estado dos componentes. Qualquer mudança em formulário, por exemplo, deve ser controlado pelo useState. (o primeiro retorno é o elemento, o segundo é uma função que vai manipular esse elemento)
-- useEffect -> Uma função que recebe dois parâmetros. O primeiro é uma função e o segundo é um array de dependências, ou seja, é quando essa função será chamada. Nesse caso, um array vazio significa que a função será chamada uma vez no load da página.
+https://github.com/GCMoura/mentor-do-bem-server
+
+## Clone
+Clone this repository to your local machine using https://github.com/GCMoura/mentor-do-bem-web.git.
+
+## Deploy
+This application was deployed using [Vercel](https://vercel.com/).
+
+## Contributing
+If you would like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
