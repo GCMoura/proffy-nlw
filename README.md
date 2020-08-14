@@ -6,7 +6,8 @@ So, Mentor do Bem intend to connect people who want to learn some technology wit
 ## Table of Contents
 - [Mentor do Bem - Frontend](#mentor-do-bem---frontend)
   - [Table of Contents](#table-of-contents)
-  - [Screenshots](#screenshots)
+  - [Screenshots (desktop layout)](#screenshots-desktop-layout)
+  - [Screenshots (mobile layout)](#screenshots-mobile-layout)
   - [How it works](#how-it-works)
   - [Backend](#backend)
   - [Clone](#clone)
@@ -14,8 +15,12 @@ So, Mentor do Bem intend to connect people who want to learn some technology wit
   - [Contributing](#contributing)
   - [License](#license)
 
-## Screenshots
-![Screenshot-1](https://raw.githubusercontent.com/GCMoura/Rijksmuseum/master/screenshots/screenshot-1.png)
+## Screenshots (desktop layout)
+![Desktop](https://raw.githubusercontent.com/GCMoura/mentor-do-bem-web/tree/master/src/assets/images/screenshots/desktop.png)
+
+## Screenshots (mobile layout)
+![Mobile](https://raw.githubusercontent.com/GCMoura/mentor-do-bem-web/tree/master/src/assets/images/screenshots/mobile.png)
+
 
 ## How it works
 First, you access login page. If you don't have an account, creating it on new account page. Then, you going to redirected to main page. You can choose between search for a connection and learn something or register your time disponibility and technology knowledge to teach someone.
